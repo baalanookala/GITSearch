@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:minHeight="150dp">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="start|center_vertical"
+        android:maxLines="2"
+        android:paddingBottom="10dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/black"
+        android:text="Volley"
+        android:textSize="21sp" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/itemDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemName"
+        android:layout_marginTop="8dp"
+        android:text="Volley"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/html_url"
+        android:layout_below="@+id/itemDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autoLink="web"
+        android:gravity="start"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="@dimen/list_phone_number_text_size" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/open_issues"
+        android:layout_below="@+id/html_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:textSize="@dimen/list_phone_number_text_size" />
+
+
+</RelativeLayout>
